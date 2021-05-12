@@ -16,6 +16,8 @@ def lambda_handler(event:, context:)
   logger.info('## EVENT')
   logger.info(event.to_json)
   logger.info('## CONTEXT')
-  logger.info(context)
+  # logger.info(context)
+  logger.info("\n")
+  logger.info(context.function_name)
   { statusCode: 200, body: JSON.generate('hello, Jeff Goldblum!') }
 end
