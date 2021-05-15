@@ -7,6 +7,7 @@ require 'aws-xray-sdk/lambda'
 
 def lambda_handler(event:, context:)
   logger = Logger.new($stdout)
+  logger.info("helo ruby lambda!")
   logger.info('## ENVIRONMENT VARIABLES')
   vars = Hash.new
   ENV.each do |variable|
