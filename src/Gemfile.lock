@@ -20,6 +20,7 @@ GEM
       aws-sdk-xray (~> 1.4.0)
       multi_json (~> 1)
     jmespath (1.4.0)
+    json (2.5.1)
     multi_json (1.15.0)
     power_assert (2.0.0)
     test-unit (3.3.5)
@@ -31,6 +32,7 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk-lambda (= 1.39.0)
   aws-xray-sdk (~> 0.11.1)
+  json (= 2.5.1)
   test-unit (= 3.3.5)
 
 BUNDLED WITH

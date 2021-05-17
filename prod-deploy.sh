@@ -8,7 +8,7 @@ cd src/
 
 rm function.zip
 
-zip -r function.zip lambda_function.rb  vendor/
+zip -r function.zip lambda_function.rb lib/  vendor/
 
 cd ..
 

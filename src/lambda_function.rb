@@ -1,6 +1,7 @@
 require 'logger'
 require 'json'
 require 'aws-sdk-lambda'
+require './lib/env_info.rb'
 $client = Aws::Lambda::Client.new()
 
 require 'aws-xray-sdk/lambda'
@@ -23,5 +24,8 @@ def lambda_handler(event:, context:)
   logger.info('## CONTEXT')
   # logger.info(context)
   logger.info(context.function_name)
+
+  env_info = EnvInfo.new
+  
   { statusCode: 200, body: JSON.generate('hello, Jeff Goldblum!') }
 end
