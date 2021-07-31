@@ -14,5 +14,5 @@ def lambda_handler(event:, context:)
   env_info.log_env
   env_info.log_event_and_context(event, context)
   
-  { statusCode: 200, body: JSON.generate('hello, Jeff Goldblum!') }
+  { statusCode: 200, body: JSON.generate('hello, world') }
 end
